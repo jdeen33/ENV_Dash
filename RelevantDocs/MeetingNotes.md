@@ -36,8 +36,7 @@ Should we also provide total square footage of buildings by year (would take som
 Include markers for various carbon targets on views? – 2004 goal 2012 , 2007 goal 2016, future goals?
  
 
-
-##Oct 23, 2024
+###Oct 23, 2024
 
 Potential use case for dashboard (Mike) : Select board for the town of Middlebury to divest from natural gas. VT gas has had to re apply for certificate of public good 
 Dashboard- Very broadly -> take greenhouse gas inventory and create a dashboard or interactive visualization
