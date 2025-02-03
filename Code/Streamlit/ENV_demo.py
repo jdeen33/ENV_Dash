@@ -21,7 +21,7 @@ import streamlit as st
 
 ## Source https://toxigon.com/building-a-multi-page-interactive-dashboard-with-streamlit-and-plotly
 st.sidebar.title('Greenhouse Gas Emissions Inventory')
-st.sidebar.image('/Users/jdeen@middlebury.edu/Documents/ENV_Dashboard/ENV_Dash/Data/energy2028-logo.png', use_container_width=True)
+st.sidebar.image('https://github.com/jdeen33/ENV_Dash/blob/main/Data/energy2028-logo.png?raw=true', use_container_width=True)
 
 page = st.sidebar.selectbox('Choose a page', ['Home', 'Scope 1A Breakdown', 'Scope 2 Breakdown'])  
 
@@ -32,7 +32,7 @@ if page== 'Home':
     st.write("All Scopes Broken Down by Year")
 
     
-    df= pd.read_csv("https://github.com/jdeen33/ENV_Dash/blob/main/Data/Tidy/all_scopes.csv")
+    df= pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/all_scopes.csv")
     
     f_df = df[df['Scope_Total_MCTDEs']!= "Total"]
     
@@ -47,8 +47,7 @@ if page== 'Home':
     
     ## Display the chart
     st.plotly_chart(fig, use_container_width=True)
-    st.image("/Users/jdeen@middlebury.edu/Documents/ENV_Dashboard/ENV_Dash/Data/62d0970d68ea166bcd1c010b_AdobeStock_462557114.jpeg",use_container_width=True)
-
+    st.image("https://github.com/jdeen33/ENV_Dash/blob/main/Data/62d0970d68ea166bcd1c010b_AdobeStock_462557114.jpeg?raw=true")
 
 
     st.write("Select a Scope to see emissions for that category")
@@ -83,14 +82,14 @@ if page== 'Home':
 
 
 elif page == 'Scope 1A Breakdown':
-    e_df = pd.read_csv("https://github.com/jdeen33/ENV_Dash/blob/main/Data/Vizuals/scopes1_2_treemapform.csv")
+    e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
     
     scope1 = e_df[e_df['Scope_Type']== "Scope 1"]
     fig2 = px.treemap(scope1.dropna(), path= ['Scope_Type','Year','Source_MTCDEs'],values= 'value', color='Source_MTCDEs',color_discrete_sequence=px.colors.qualitative.T10)
     st.plotly_chart(fig2)
     
 elif page== 'Scope 2 Breakdown':
-    e_df = pd.read_csv("https://github.com/jdeen33/ENV_Dash/blob/main/Data/Vizuals/scopes1_2_treemapform.csv")
+    e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
 
     scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
     fig3 = px.treemap(scope2.dropna(), path= ['Scope_Type','Year','Source_MTCDEs'],values= 'value', color='Source_MTCDEs',color_discrete_sequence=px.colors.qualitative.Bold)
