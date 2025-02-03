@@ -32,7 +32,7 @@ if page== 'Home':
     st.write("All Scopes Broken Down by Year")
 
     
-    df= pd.read_csv("/Users/jdeen@middlebury.edu/Documents/ENV_Dashboard/ENV_Dash/Data/Tidy/all_scopes.csv")
+    df= pd.read_csv("https://github.com/jdeen33/ENV_Dash/blob/main/Data/Tidy/all_scopes.csv")
     
     f_df = df[df['Scope_Total_MCTDEs']!= "Total"]
     
@@ -83,14 +83,14 @@ if page== 'Home':
 
 
 elif page == 'Scope 1A Breakdown':
-    e_df = pd.read_csv("/Users/jdeen@middlebury.edu/Documents/ENV_Dashboard/ENV_Dash/Data/Vizuals/scopes1_2_treemapform.csv")
+    e_df = pd.read_csv("https://github.com/jdeen33/ENV_Dash/blob/main/Data/Vizuals/scopes1_2_treemapform.csv")
     
     scope1 = e_df[e_df['Scope_Type']== "Scope 1"]
     fig2 = px.treemap(scope1.dropna(), path= ['Scope_Type','Year','Source_MTCDEs'],values= 'value', color='Source_MTCDEs',color_discrete_sequence=px.colors.qualitative.T10)
     st.plotly_chart(fig2)
     
 elif page== 'Scope 2 Breakdown':
-    e_df = pd.read_csv("/Users/jdeen@middlebury.edu/Documents/ENV_Dashboard/ENV_Dash/Data/Vizuals/scopes1_2_treemapform.csv")
+    e_df = pd.read_csv("https://github.com/jdeen33/ENV_Dash/blob/main/Data/Vizuals/scopes1_2_treemapform.csv")
 
     scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
     fig3 = px.treemap(scope2.dropna(), path= ['Scope_Type','Year','Source_MTCDEs'],values= 'value', color='Source_MTCDEs',color_discrete_sequence=px.colors.qualitative.Bold)
