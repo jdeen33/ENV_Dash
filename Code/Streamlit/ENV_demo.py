@@ -9,6 +9,7 @@ Created on Thu Jan 16 13:56:15 2025
  #fd
 import pandas as pd
 import numpy as np 
+import plotly
 import plotly.express as px
 from dash import Dash, html, dash_table, dcc, callback, Output, Input
 import dash_bootstrap_components as dbc
