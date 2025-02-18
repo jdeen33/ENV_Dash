@@ -92,14 +92,14 @@ elif page == "Breakdown by Scope":
         st.write("Click on any box in the visual to isolate it")
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 1")&(e_df['Source_MTCDEs']!= 'Scope 1 TOTAL' )]
-        fig= make_treemap(scope2,['Year','Source_MTCDEs'],'value','Source_MTCDEs',px.colors.qualitative.T10)        
+        fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.T10)        
         st.plotly_chart(fig)#,use_container_width=True)
     
     elif scope== 'Scope 2':
         st.write("Click on any box in the visual to isolate it")
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
-        fig= make_treemap(scope2,['Year','Source_MTCDEs'],'value','Source_MTCDEs',px.colors.qualitative.D3_r)        
+        fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.D3_r)        
         st.plotly_chart(fig)
 
         
