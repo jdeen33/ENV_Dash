@@ -31,11 +31,12 @@ page = st.sidebar.selectbox('Pages', ['Home', "Breakdown by Scope", 'Data & Meth
 
 ##functions to make various plots 
 
-def make_treemap(df,path1,values1,color1,cs1):
-    fig = px.treemap(df.dropna(), path=path1, values =values1,color=color1, color_discrete_sequence= cs1)
-    fig.update_traces(textposition= "middle center",marker= dict(line=dict(width=2)))
-    fig.update_traces(hovertemplate="<b>Source: %{label}</b><br>MTCD: %{value}<extra></extra>")
-    fig.update_layout(margin=dict(t=0, l=25, r=25, b=0))
+def make_treemap(df,path1,values1,color1,cs1,title_):
+    fig = px.bar(df.dropna(), x=path1, y=values1,color=color1, color_discrete_sequence= cs1, labels= {"value":"Metric Tons of Carbon Dioxide", "Year":"Fiscal Year","Scope_Total_MCTDEs":"Emission Scope"},title=title_) 
+
+   #fig.update_traces(textposition= "middle center",marker= dict(line=dict(width=2)))
+    #fig.update_traces(hovertemplate="<b>Source: %{label}</b><br>MTCD: %{value}<extra></extra>")
+    #fig.update_layout(margin=dict(t=0, l=25, r=25, b=0))
     return fig
 
 # layout and content of individual pages 
@@ -89,17 +90,17 @@ if page== 'Home':
 elif page == "Breakdown by Scope":
     scope= st.sidebar.selectbox('Scope', ["Scope 1A", "Scope 2"])
     if scope == "Scope 1A":
-        st.write("Click on any box in the visual to isolate it")
+        st.write("Double click on any variable in the legend to isolate it on the graph")
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 1")&(e_df['Source_MTCDEs']!= 'Scope 1 TOTAL' )]
-        fig= make_treemap(scope2,['Year','Source_MTCDEs'],'value','Source_MTCDEs',px.colors.qualitative.D3_r)        
+        fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.D3_r,"Scope 1A Greenhouse Gas Emissions Inventory")        
         st.plotly_chart(fig)#,use_container_width=True)
     
     elif scope== 'Scope 2':
-        st.write("Click on any box in the visual to isolate it")
+        st.write("Double click on any box in the legend visual to isolate it on the graph")
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
-        fig= make_treemap(scope2,['Year','Source_MTCDEs'],'value','Source_MTCDEs',px.colors.qualitative.T10)        
+        fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.T10,"Scope 2 Greenhouse Gas Emissions Inventory")        
         st.plotly_chart(fig)
 
         
