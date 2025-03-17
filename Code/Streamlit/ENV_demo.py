@@ -95,7 +95,7 @@ elif page == "Breakdown by Scope":
         scope2= e_df[(e_df['Scope_Type']== "Scope 1")&(e_df['Source_MTCDEs']!= 'Scope 1 TOTAL' )]
         fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.D3_r,"Scope 1A Greenhouse Gas Emissions Inventory")        
 
-        fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.Prism)        
+        #fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.Prism)        
 
         st.plotly_chart(fig)#,use_container_width=True)
     
@@ -104,7 +104,7 @@ elif page == "Breakdown by Scope":
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
         fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.T10,"Scope 2 Greenhouse Gas Emissions Inventory")        
-        fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.D3_r)        
+        #fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.D3_r)        
         st.plotly_chart(fig)
 
         
