@@ -93,22 +93,18 @@ elif page == "Breakdown by Scope":
         st.write("Double click on any variable in the legend to isolate it on the graph")
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 1")&(e_df['Source_MTCDEs']!= 'Scope 1 TOTAL' )]
-<<<<<<< HEAD:Code/ENV_demo.py
         fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.D3_r,"Scope 1A Greenhouse Gas Emissions Inventory")        
-=======
+
         fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.Prism)        
->>>>>>> cf5ace094e6298a9513a42df91e1768ea9058fc5:Code/Streamlit/ENV_demo.py
+
         st.plotly_chart(fig)#,use_container_width=True)
     
     elif scope== 'Scope 2':
         st.write("Double click on any box in the legend visual to isolate it on the graph")
         e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
         scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
-<<<<<<< HEAD:Code/ENV_demo.py
         fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.T10,"Scope 2 Greenhouse Gas Emissions Inventory")        
-=======
         fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.D3_r)        
->>>>>>> cf5ace094e6298a9513a42df91e1768ea9058fc5:Code/Streamlit/ENV_demo.py
         st.plotly_chart(fig)
 
         
