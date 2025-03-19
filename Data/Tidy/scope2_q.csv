@@ -1,0 +1,325 @@
+,Emissions_Source,Fiscal_Year,value
+0,Co-Generation,FY2006,4242211.0
+1,Wind,FY2006,4825.0
+2,Solar,FY2006,1001.0
+3,CH4 digestion,FY2006,41680.0
+4,Biomass,FY2006,346227.0
+5,Hydro,FY2006,7768634.0
+6,Nuclear,FY2006,11789610.0
+7,Natural Gas,FY2006,125868.0
+8,Coal,FY2006,48573.0
+9,"#1, 2, & 4 Fuel Oil",FY2006,10223.0
+10,#5 & 6 Fuel Oil,FY2006,63486.0
+11,Other (assume NPCC grid),FY2006,1384037.0
+12,Total kWh,FY2006,25826374.0
+13,MMBTU_elec_nat_gas,FY2006,429.5
+14,MMBTUs of electricity_coal,FY2006,165.7
+15,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2006,34.9
+16,MMBTUs of electricity(#5&6 Fuel Oil),FY2006,216.6
+17,MMBTUs of electricity(NPCC),FY2006,4722.5
+18,Co-Generation,FY2007,4450804.0
+19,Wind,FY2007,4317.0
+20,Solar,FY2007,2966.0
+21,CH4 digestion,FY2007,50869.0
+22,Biomass,FY2007,416638.0
+23,Hydro,FY2007,8276473.0
+24,Nuclear,FY2007,10711877.0
+25,Natural Gas,FY2007,185853.0
+26,Coal,FY2007,75483.0
+27,"#1, 2, & 4 Fuel Oil",FY2007,17076.0
+28,#5 & 6 Fuel Oil,FY2007,129287.0
+29,Other (assume NPCC grid),FY2007,2120179.0
+30,Total kWh,FY2007,26441822.0
+31,MMBTU_elec_nat_gas,FY2007,634.1
+32,MMBTUs of electricity_coal,FY2007,257.6
+33,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2007,58.3
+34,MMBTUs of electricity(#5&6 Fuel Oil),FY2007,441.1
+35,MMBTUs of electricity(NPCC),FY2007,7234.3
+36,Co-Generation,FY2008,4139840.0
+37,Wind,FY2008,5168.0
+38,Solar,FY2008,11573.0
+39,CH4 digestion,FY2008,38941.0
+40,Biomass,FY2008,358523.0
+41,Hydro,FY2008,7983022.0
+42,Nuclear,FY2008,10766993.0
+43,Natural Gas,FY2008,140803.0
+44,Coal,FY2008,53225.0
+45,"#1, 2, & 4 Fuel Oil",FY2008,11056.0
+46,#5 & 6 Fuel Oil,FY2008,76921.0
+47,Other (assume NPCC grid),FY2008,2011923.0
+48,Total kWh,FY2008,25597988.0
+49,MMBTU_elec_nat_gas,FY2008,480.4
+50,MMBTUs of electricity_coal,FY2008,181.6
+51,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2008,37.7
+52,MMBTUs of electricity(#5&6 Fuel Oil),FY2008,262.5
+53,MMBTUs of electricity(NPCC),FY2008,6864.9
+54,Co-Generation,FY2009,3813050.0
+55,Wind,FY2009,3965.0
+56,Solar,FY2009,11006.0
+57,CH4 digestion,FY2009,78354.0
+58,Biomass,FY2009,775694.0
+59,Hydro,FY2009,8798582.0
+60,Nuclear,FY2009,12078658.0
+61,Natural Gas,FY2009,0.0
+62,Coal,FY2009,0.0
+63,"#1, 2, & 4 Fuel Oil",FY2009,44325.0
+64,#5 & 6 Fuel Oil,FY2009,0.0
+65,Other (assume NPCC grid),FY2009,398928.0
+66,Total kWh,FY2009,26002562.0
+67,MMBTU_elec_nat_gas,FY2009,0.0
+68,MMBTUs of electricity_coal,FY2009,0.0
+69,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2009,151.2
+70,MMBTUs of electricity(#5&6 Fuel Oil),FY2009,0.0
+71,MMBTUs of electricity(NPCC),FY2009,1361.2
+72,Co-Generation,FY2010,4115865.0
+73,Wind,FY2010,4910.0
+74,Solar,FY2010,10627.0
+75,CH4 digestion,FY2010,66491.0
+76,Biomass,FY2010,858165.0
+77,Hydro,FY2010,8867706.0
+78,Nuclear,FY2010,11024121.0
+79,Natural Gas,FY2010,0.0
+80,Coal,FY2010,0.0
+81,"#1, 2, & 4 Fuel Oil",FY2010,0.0
+82,#5 & 6 Fuel Oil,FY2010,22004.0
+83,Other (assume NPCC grid),FY2010,1210233.0
+84,Total kWh,FY2010,26180122.0
+85,MMBTU_elec_nat_gas,FY2010,0.0
+86,MMBTUs of electricity_coal,FY2010,0.0
+87,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2010,0.0
+88,MMBTUs of electricity(#5&6 Fuel Oil),FY2010,75.1
+89,MMBTUs of electricity(NPCC),FY2010,4129.4
+90,Co-Generation,FY2011,3654240.0
+91,Wind,FY2011,2768.0
+92,Solar,FY2011,143023.0
+93,CH4 digestion,FY2011,66000.0
+94,Biomass,FY2011,739864.0
+95,Hydro,FY2011,8417072.0
+96,Nuclear,FY2011,11125311.0
+97,Natural Gas,FY2011,139816.0
+98,Coal,FY2011,21426.0
+99,"#1, 2, & 4 Fuel Oil",FY2011,6371.0
+100,#5 & 6 Fuel Oil,FY2011,14866.0
+101,Other (assume NPCC grid),FY2011,955680.0
+102,Total kWh,FY2011,25286438.0
+103,MMBTU_elec_nat_gas,FY2011,477.1
+104,MMBTUs of electricity_coal,FY2011,73.1
+105,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2011,21.7
+106,MMBTUs of electricity(#5&6 Fuel Oil),FY2011,50.7
+107,MMBTUs of electricity(NPCC),FY2011,3260.9
+108,Co-Generation,FY2012,3320096.0
+109,Wind,FY2012,2328.0
+110,Solar,FY2012,259362.0
+111,CH4 digestion,FY2012,31835.0
+112,Biomass,FY2012,1134705.0
+113,Hydro,FY2012,10454395.0
+114,Nuclear,FY2012,4303835.0
+115,Natural Gas,FY2012,3864018.0
+116,Coal,FY2012,475794.0
+117,"#1, 2, & 4 Fuel Oil",FY2012,26644.0
+118,#5 & 6 Fuel Oil,FY2012,19411.0
+119,Other (assume NPCC grid),FY2012,22.0
+120,Total kWh,FY2012,23892446.0
+121,MMBTU_elec_nat_gas,FY2012,13184.4
+122,MMBTUs of electricity_coal,FY2012,1623.5
+123,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2012,90.9
+124,MMBTUs of electricity(#5&6 Fuel Oil),FY2012,66.2
+125,MMBTUs of electricity(NPCC),FY2012,0.1
+126,Co-Generation,FY2013,3756420.0
+127,Wind,FY2013,4172.0
+128,Solar,FY2013,606777.0
+129,CH4 digestion,FY2013,31835.0
+130,Biomass,FY2013,1109162.0
+131,Hydro,FY2013,10219053.0
+132,Nuclear,FY2013,4206949.0
+133,Natural Gas,FY2013,3777033.0
+134,Coal,FY2013,465084.0
+135,"#1, 2, & 4 Fuel Oil",FY2013,236871.0
+136,#5 & 6 Fuel Oil,FY2013,18974.0
+137,Other (assume NPCC grid),FY2013,21.0
+138,Total kWh,FY2013,24432351.0
+139,MMBTU_elec_nat_gas,FY2013,12887.6
+140,MMBTUs of electricity_coal,FY2013,1586.9
+141,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2013,808.2
+142,MMBTUs of electricity(#5&6 Fuel Oil),FY2013,64.7
+143,MMBTUs of electricity(NPCC),FY2013,0.1
+144,Co-Generation,FY2014,3604293.0
+145,Wind,FY2014,4902.0
+146,Solar,FY2014,1031541.0
+147,CH4 digestion,FY2014,31835.0
+148,Biomass,FY2014,0.0
+149,Hydro,FY2014,10208203.0
+150,Nuclear,FY2014,5819297.0
+151,Natural Gas,FY2014,4006875.0
+152,Coal,FY2014,0.0
+153,"#1, 2, & 4 Fuel Oil",FY2014,2176684.0
+154,#5 & 6 Fuel Oil,FY2014,0.0
+155,Other (assume NPCC grid),FY2014,0.0
+156,Total kWh,FY2014,26883630.0
+157,MMBTU_elec_nat_gas,FY2014,13671.9
+158,MMBTUs of electricity_coal,FY2014,0.0
+159,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2014,7427.1
+160,MMBTUs of electricity(#5&6 Fuel Oil),FY2014,0.0
+161,MMBTUs of electricity(NPCC),FY2014,0.0
+162,Co-Generation,FY2015,3001400.0
+163,Wind,FY2015,4126.0
+164,Solar,FY2015,1034979.0
+165,CH4 digestion,FY2015,31800.0
+166,Biomass,FY2015,0.0
+167,Hydro,FY2015,7455279.0
+168,Nuclear,FY2015,6094493.0
+169,Natural Gas,FY2015,4456408.0
+170,Coal,FY2015,0.0
+171,"#1, 2, & 4 Fuel Oil",FY2015,2234580.0
+172,#5 & 6 Fuel Oil,FY2015,0.0
+173,Other (assume NPCC grid),FY2015,0.0
+174,Total kWh,FY2015,24313064.0
+175,MMBTU_elec_nat_gas,FY2015,15205.7
+176,MMBTUs of electricity_coal,FY2015,0.0
+177,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2015,7624.6
+178,MMBTUs of electricity(#5&6 Fuel Oil),FY2015,0.0
+179,MMBTUs of electricity(NPCC),FY2015,0.0
+180,Co-Generation,FY2016,3578299.0
+181,Wind,FY2016,4341.0
+182,Solar,FY2016,1395497.0
+183,CH4 digestion,FY2016,
+184,Biomass,FY2016,295964.0
+185,Hydro,FY2016,9848027.0
+186,Nuclear,FY2016,5610097.0
+187,Natural Gas,FY2016,3892034.0
+188,Coal,FY2016,238190.0
+189,"#1, 2, & 4 Fuel Oil",FY2016,23312.0
+190,#5 & 6 Fuel Oil,FY2016,0.0
+191,Other (assume NPCC grid),FY2016,2005862.0
+192,Total kWh,FY2016,26891624.0
+193,MMBTU_elec_nat_gas,FY2016,13280.0
+194,MMBTUs of electricity_coal,FY2016,812.7
+195,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2016,79.5
+196,MMBTUs of electricity(#5&6 Fuel Oil),FY2016,0.0
+197,MMBTUs of electricity(NPCC),FY2016,6844.2
+198,Co-Generation,FY2017,2997780.0
+199,Wind,FY2017,3863.0
+200,Solar,FY2017,1786463.0
+201,CH4 digestion,FY2017,
+202,Biomass,FY2017,292174.0
+203,Hydro,FY2017,9769825.0
+204,Nuclear,FY2017,6158785.0
+205,Natural Gas,FY2017,4924548.0
+206,Coal,FY2017,161199.0
+207,"#1, 2, & 4 Fuel Oil",FY2017,70525.0
+208,#5 & 6 Fuel Oil,FY2017,0.0
+209,Other (assume NPCC grid),FY2017,322398.0
+210,Total kWh,FY2017,26487561.0
+211,MMBTU_elec_nat_gas,FY2017,16803.1
+212,MMBTUs of electricity_coal,FY2017,550.0
+213,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2017,240.6
+214,MMBTUs of electricity(#5&6 Fuel Oil),FY2017,0.0
+215,MMBTUs of electricity(NPCC),FY2017,1100.1
+216,Co-Generation,FY2018,3761060.0
+217,Wind,FY2018,4135.0
+218,Solar,FY2018,1703031.0
+219,CH4 digestion,FY2018,
+220,Biomass,FY2018,0.0
+221,Hydro,FY2018,12338888.0
+222,Nuclear,FY2018,5663752.0
+223,Natural Gas,FY2018,1213661.0
+224,Coal,FY2018,0.0
+225,"#1, 2, & 4 Fuel Oil",FY2018,1011384.0
+226,#5 & 6 Fuel Oil,FY2018,0.0
+227,Other (assume NPCC grid),FY2018,0.0
+228,Total kWh,FY2018,25695911.0
+229,MMBTU_elec_nat_gas,FY2018,4141.1
+230,MMBTUs of electricity_coal,FY2018,0.0
+231,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2018,3450.9
+232,MMBTUs of electricity(#5&6 Fuel Oil),FY2018,0.0
+233,MMBTUs of electricity(NPCC),FY2018,0.0
+234,Co-Generation,FY2019,3041280.0
+235,Wind,FY2019,3575.0
+236,Solar,FY2019,1812588.0
+237,CH4 digestion,FY2019,
+238,Biomass,FY2019,0.0
+239,Hydro,FY2019,10872285.0
+240,Nuclear,FY2019,5545527.0
+241,Natural Gas,FY2019,442812.0
+242,Coal,FY2019,950.0
+243,"#1, 2, & 4 Fuel Oil",FY2019,43965.0
+244,#5 & 6 Fuel Oil,FY2019,0.0
+245,Other (assume NPCC grid),FY2019,199424.0
+246,Total kWh,FY2019,21962405.0
+247,MMBTU_elec_nat_gas,FY2019,1510.9
+248,MMBTUs of electricity_coal,FY2019,3.2
+249,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2019,150.0
+250,MMBTUs of electricity(#5&6 Fuel Oil),FY2019,0.0
+251,MMBTUs of electricity(NPCC),FY2019,680.5
+252,Co-Generation,FY2020,3000444.0
+253,Wind,FY2020,2072.0
+254,Solar,FY2020,1772245.0
+255,CH4 digestion,FY2020,
+256,Biomass,FY2020,0.0
+257,Hydro,FY2020,11654608.0
+258,Nuclear,FY2020,5693445.0
+259,Natural Gas,FY2020,0.0
+260,Coal,FY2020,18.0
+261,"#1, 2, & 4 Fuel Oil",FY2020,0.0
+262,#5 & 6 Fuel Oil,FY2020,0.0
+263,Other (assume NPCC grid),FY2020,0.0
+264,Total kWh,FY2020,22122832.0
+265,MMBTU_elec_nat_gas,FY2020,0.0
+266,MMBTUs of electricity_coal,FY2020,0.1
+267,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2020,0.0
+268,MMBTUs of electricity(#5&6 Fuel Oil),FY2020,0.0
+269,MMBTUs of electricity(NPCC),FY2020,0.0
+270,Co-Generation,FY2021,3175960.0
+271,Wind,FY2021,1652.0
+272,Solar,FY2021,1852576.0
+273,CH4 digestion,FY2021,
+274,Biomass,FY2021,0.0
+275,Hydro,FY2021,11385073.0
+276,Nuclear,FY2021,5561774.0
+277,Natural Gas,FY2021,0.0
+278,Coal,FY2021,17.0
+279,"#1, 2, & 4 Fuel Oil",FY2021,0.0
+280,#5 & 6 Fuel Oil,FY2021,0.0
+281,Other (assume NPCC grid),FY2021,0.0
+282,Total kWh,FY2021,21977052.0
+283,MMBTU_elec_nat_gas,FY2021,0.0
+284,MMBTUs of electricity_coal,FY2021,0.1
+285,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2021,0.0
+286,MMBTUs of electricity(#5&6 Fuel Oil),FY2021,0.0
+287,MMBTUs of electricity(NPCC),FY2021,0.0
+288,Co-Generation,FY2022,2526700.0
+289,Wind,FY2022,3052.0
+290,Solar,FY2022,1822989.0
+291,CH4 digestion,FY2022,
+292,Biomass,FY2022,0.0
+293,Hydro,FY2022,12220322.0
+294,Nuclear,FY2022,5969805.0
+295,Natural Gas,FY2022,0.0
+296,Coal,FY2022,19.0
+297,"#1, 2, & 4 Fuel Oil",FY2022,0.0
+298,#5 & 6 Fuel Oil,FY2022,0.0
+299,Other (assume NPCC grid),FY2022,0.0
+300,Total kWh,FY2022,22542886.0
+301,MMBTU_elec_nat_gas,FY2022,0.0
+302,MMBTUs of electricity_coal,FY2022,0.1
+303,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2022,0.0
+304,MMBTUs of electricity(#5&6 Fuel Oil),FY2022,0.0
+305,MMBTUs of electricity(NPCC),FY2022,0.0
+306,Co-Generation,FY2023,2545300.0
+307,Wind,FY2023,851.0
+308,Solar,FY2023,1691948.0
+309,CH4 digestion,FY2023,
+310,Biomass,FY2023,0.0
+311,Hydro,FY2023,11947185.0
+312,Nuclear,FY2023,5836374.0
+313,Natural Gas,FY2023,0.0
+314,Coal,FY2023,18.0
+315,"#1, 2, & 4 Fuel Oil",FY2023,0.0
+316,#5 & 6 Fuel Oil,FY2023,0.0
+317,Other (assume NPCC grid),FY2023,0.0
+318,Total kWh,FY2023,22021676.0
+319,MMBTU_elec_nat_gas,FY2023,0.0
+320,MMBTUs of electricity_coal,FY2023,0.1
+321,"MMBTUs of electricity(#1,2,4 fuel oil)",FY2023,0.0
+322,MMBTUs of electricity(#5&6 Fuel Oil),FY2023,0.0
+323,MMBTUs of electricity(NPCC),FY2023,0.0
