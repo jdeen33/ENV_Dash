@@ -33,52 +33,48 @@ col1, col2 = st.columns((3,1))
  
 ##functions to make various plots 
 
-def make_treemap(df,path1,values1,color1,cs1,title_):
-    fig = px.bar(df.dropna(), x=path1, y=values1,color=color1, color_discrete_sequence= cs1, labels= {"value":"Metric Tons of Carbon Dioxide", "Year":"Fiscal Year","Scope_Total_MCTDEs":"Emission Scope"},title=title_) 
+def make_bar_graph(df,xval,yval,color1,cs1,title_):
+    fig = px.bar(df, x=xval, y=yval,color=color1, color_discrete_sequence= cs1, labels= {"value":"Metric Tons of Carbon Dioxide", "Year":"Fiscal Year","Scope_Total_MCTDEs":"Emission Scope"},title=title_,
+    hover_data={"Fiscal_Year":False,"Emissions_Source":False,"MTCDE":True},labels={"MTCDE":"Metric Tons of Carbon Dioxide","Fiscal_Year":"Fiscal Year", "Emissions_Source":"Source of Emissions"})
+    fig.update_layout(font_family="Balto",font=dict(size=17), margin=dict(l=20, r=20, t=35, b=20))
+    fig.update_layout(title_font_weight=1000)
+    fig.update_xaxes(rangeselector_font_size=12,rangeselector_font_weight=1000)
     return fig
 
-
-
-df= pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/all_scopes.csv")
+all_scopes = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/all_scopes.csv")
+scope1A= pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/scope1_sums.csv")
+scope1B= pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/scope1B_MTCDE.csv")
+scope2= pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/scope2_sums.csv")
+scope3=pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Tidy/scope3_MTCDEs.csv")
         
-f_df = df[df['Scope_Total_MCTDEs']!= "Total"]
+
 with col1:       
     st.write("**Tip**: Hover your cursor over the graph to see underlying data points. Double click on a variable in the legend to display it by itself on the chart")
-    fig = px.bar(f_df, x= "Year" ,y= "value", color="Scope_Total_MCTDEs", color_discrete_sequence=px.colors.qualitative.Safe, title= "Middlebury College Greenhouse Gas Inventory: 2006-2024, sorted by Metric Tons",
-    labels= {"value":"Metric Tons of Carbon Dioxide", "Year":"Fiscal Year","Scope_Total_MCTDEs":"Emission Scope"}  )
-                
+    fig = make_bar_graph(all_scopes, xval= "Fiscal_Year" ,yval= "MTCDE", color1="Emissions_Source", cs1=px.colors.qualitative.Safe, title_= "Middlebury College Greenhouse Gas Inventory: 2006-2024")         
     st.plotly_chart(fig, use_container_width=True)
 
-#want to hide from dashboard but could reuse code later        
-#st.subheader("Emission Sources Breakdown by Year")
-#st.write("Select a fiscal year to see emissions for that time period")
-#years = ["2006_2007","2007_2008","2008_2009","2009_2010","2010_2011","2011_2012","2012_2013","2013_2014","2014_2015","2015_2016","2016_2017","2017_2018","2018_2019","2019_2020","2020_2021","2021_2022","2022_2023","2023_2024"]
-#selected_year= st.selectbox("Year",years)       
-#st.subheader(f"Middlebury College Greenhouse Gas Emissions in the {selected_year} Fiscal Year")
-#filtered_year= f_df[(f_df['Year']==selected_year)]
-    
-#fig2 = px.bar(filtered_year, x= "Scope_Total_MCTDEs" ,y= "value", color="Scope_Total_MCTDEs", color_discrete_sequence=px.colors.qualitative.Prism,
-#labels= {"value":"Metric Tons of Carbon Dioxide", "Year":"Fiscal Year","Scope_Total_MCTDEs":"Emission Scope"})
-#st.plotly_chart(fig2)
 
-    scope= st.selectbox('Scope', ["Scope 1A", "Scope 2"])
+
+    scope= st.selectbox('Scope', ["Scope 1A", "Scope 1B","Scope 2","Scope 3"])
     if scope == "Scope 1A":
         st.write ("Double click on any variable in the legend to isolate it on the graph")
-        e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
-        scope2= e_df[(e_df['Scope_Type']== "Scope 1")&(e_df['Source_MTCDEs']!= 'Scope 1 TOTAL' )]
-        fig1= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.D3_r,"Scope 1A Greenhouse Gas Emissions Inventory")        
-
-        #fig= make_treemap(scope2,['Year','Source_MTCDEs','value'],'value','Source_MTCDEs',px.colors.qualitative.Prism)        
-
-        st.plotly_chart(fig1)#,use_container_width=True)
+        fig1=make_bar_graph(scope1A, xval= "Fiscal_Year" ,yval= "MTCDE", color1="Emissions_Source", cs1=px.colors.qualitative.Bold, title_= "Middlebury College Greenhouse Gas Inventory: Scope1A")                
+        st.plotly_chart(fig1,use_container_width=True)
     
+    if scope == "Scope 1B":
+        st.write("Double click on any box in the legend visual to isolate it on the graph")
+        fig1=make_bar_graph(scope1B, xval= "Fiscal_Year" ,yval= "MTCDE", color1="Emissions_Source", cs1=px.colors.qualitative.Bold, title_= "Middlebury College Greenhouse Gas Inventory: Scope1B")                
+        st.plotly_chart(fig1,use_container_width=True)
+        
     if scope == "Scope 2":
         st.write("Double click on any box in the legend visual to isolate it on the graph")
-        e_df = pd.read_csv("https://raw.githubusercontent.com/jdeen33/ENV_Dash/refs/heads/main/Data/Vizuals/scopes1_2_treemapform.csv")
-        scope2= e_df[(e_df['Scope_Type']== "Scope 2")&(e_df['Source_MTCDEs']!= 'Scope 2 TOTAL' )]
-        fig= make_treemap(scope2,'Year','value','Source_MTCDEs',px.colors.qualitative.T10,"Scope 2 Greenhouse Gas Emissions Inventory")        
-        st.plotly_chart(fig)
-
+        fig1=make_bar_graph(scope2, xval= "Fiscal_Year" ,yval= "MTCDE", color1="Emissions_Source", cs1=px.colors.qualitative.Set2_r, title_= "Middlebury College Greenhouse Gas Inventory: Scope2")                
+        st.plotly_chart(fig1,use_container_width=True)
+        
+    if scope == "Scope 3":
+       st.write("Double click on any box in the legend visual to isolate it on the graph")
+       fig1=make_bar_graph(scope3, xval= "Fiscal_Year" ,yval= "MTCDE", color1="Emissions_Source", cs1=px.colors.qualitative.D3_r, title_= "Middlebury College Greenhouse Gas Inventory: Scope3")                
+       st.plotly_chart(fig1,use_container_width=True)
 with col2:
     st.markdown("**Scope 1** : Direct Emissions from both stationary & mobile combustion of fossil fuels purchased and owned by the institution\n\n**Scope 2**: Indirect Emissions from Electricity Purchases - Includes emissions from all stationary combustion of fossil fuels done in direct proportion to an energy source purchased by the institution \n\n**Scope 3**: Indirect Emissions from Outsourced Travel - This section includes all emissions from the mobile combustion of fossil fuels used in vehicles whose services are directly solicited by the institution. It also includes indirect emissions from landfill waste. \n\n**Offsets Internal**:  \n\n**Offsets External**:")
 
