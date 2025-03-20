@@ -27,7 +27,7 @@ st.set_page_config(layout="wide")
 st.markdown("## Welcome to Middlebury's Greenhouse Gas Emissions Dashboard")
 #st.image('https://github.com/jdeen33/ENV_Dash/blob/main/Data/energy2028-logo.png?raw=true', use_container_width=False)
 st.markdown('This dashboard shows a summary of Greenhouse Gas Emissions from the years 2006 to 2024, broken down by type, and measured in metric tons, as well as offsets used to calculate the college’s net emissions')
-st.markdown(" Learn more about Energy 2028 [here]('https://www.middlebury.edu/energy2028)")
+
    
 col1, col2 = st.columns((3,1))
  
