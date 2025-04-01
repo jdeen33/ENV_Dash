@@ -23,7 +23,7 @@ import streamlit as st
 ## basic layout
 st.set_page_config(layout="wide")
 st.markdown("## Welcome to Middlebury's Greenhouse Gas Emissions Dashboard")
-st.image('https://github.com/jdeen33/ENV_Dash/blob/main/Data/energy2028-logo.png?raw=true', use_container_width=False)
+st.image('https://github.com/jdeen33/ENV_Dash/blob/main/Data/Images_for_website/energy2028-logo.png?raw=true', use_container_width=False)
 st.markdown('**About this project**: Since 2006, Middlebury College has been tracking its carbon emissions, and the sources of those emissions as part of our efforts to use less energy, and to cease all greenhouse gas emissions. You can download all of the data if you want to do your own analysis. And we’ve created a codebook that explains how the data is structured and the assumptions we made when doing calculations and conversions.' )
 st.markdown("We categorize our emissions using the greenhouse gas protocols. These divide emissions into three scopes:  **Scope 1**, **Scope 2**,  and **Scope 3**")
 #st.markdown("**Scope 1** :  Emissions from burning fossil fuels on campus\n\n**Scope 2**: Emissions from electricity used on campus.\n\n**Scope 3**: Indirect Emissions from Outsourced Travel - This section includes all emissions from the mobile combustion of fossil fuels used in vehicles whose services are directly solicited by the institution. It also includes indirect emissions from landfill waste. \n\nWe also track two types of offsets:\n\n**Offsets Internal**:Carbon offsets from college-owned carbon sinks. \n\n**Offsets External**:Carbon offsets purchased from external sources. \n\n     \n\n         ")
